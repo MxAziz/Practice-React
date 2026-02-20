@@ -17,6 +17,10 @@ function App() {
     }
   }
 
+  const resetValue = () => {
+    setCounter(0)
+  }
+
   return (
     <>
       <h1>React counter App</h1>
@@ -25,6 +29,8 @@ function App() {
         <button onClick={addValue}>Add Value</button>
         <button onClick={removeValue}>Remove Value</button>
       </div>
+      <br />
+      <button onClick={resetValue} style={{}}>Reset</button>
     </>
   );
 }
