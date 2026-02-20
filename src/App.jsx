@@ -6,13 +6,15 @@ function App() {
   const [counter, setCounter] = useState(0)
 
   const addValue = () => {
-    console.log('Add button clicked', counter)
-    setCounter(counter + 1);
+    if (counter < 20) {
+      setCounter(counter + 1);
+    }
   }
 
   const removeValue = () => {
-    console.log('remove button clicked', counter)
-    setCounter(counter - 1);
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   }
 
   return (
