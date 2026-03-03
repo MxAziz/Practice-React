@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css'
+import Book from './components/book/Book';
+import BookStore from './components/book/BookStore';
 
 function App() {
 
@@ -21,6 +23,14 @@ function App() {
     setCounter(0)
   }
 
+  // book store
+  const books = [
+    { id: 1, name: Biology, price: 10 },
+    { id: 2, name: English, price: 20 },
+    { id: 3, name: Physics, price: 30 },
+    { id: 4, name: chemistry, price: 40 },
+  ];
+
   return (
     <>
       <h1>React counter App</h1>
@@ -31,6 +41,11 @@ function App() {
       </div>
       <br />
       <button onClick={resetValue} style={{}}>Reset</button>
+
+      <hr />
+
+      <h1>Book Store App</h1>
+      <BookStore books={books}></BookStore>
     </>
   );
 }
