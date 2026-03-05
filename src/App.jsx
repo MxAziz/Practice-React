@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css'
-import Book from './components/book/Book';
 import BookStore from './components/book/BookStore';
 
 function App() {
@@ -25,10 +24,10 @@ function App() {
 
   // book store
   const books = [
-    { id: 1, name: Biology, price: 10 },
-    { id: 2, name: English, price: 20 },
-    { id: 3, name: Physics, price: 30 },
-    { id: 4, name: chemistry, price: 40 },
+    { id: 1, price: 10 },
+    { id: 2, price: 20 },
+    { id: 3, price: 30 },
+    { id: 4, price: 40 },
   ];
 
   return (

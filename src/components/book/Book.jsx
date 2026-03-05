@@ -1,9 +1,9 @@
 export default function Book({book}) {
-    console.log(book);
-    const { name, price } = book;
+    console.log("inside book component:",book);
+    const { id, price } = book;
     return (
         <div>
-            <h1>Book Name: {name} </h1>
+            <h1>Book id: {id} </h1>
             <p>Book Price: {price} </p>
         </div>
     )
